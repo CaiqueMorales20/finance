@@ -1,12 +1,13 @@
-import {View, Text} from 'react-native';
+// Imported Components
+import {Container, Text} from './App.styled';
 
 // Functional Component
 const App = () => {
   // Rendering
   return (
-    <View>
+    <Container>
       <Text>Controle de finanças</Text>
-    </View>
+    </Container>
   );
 };
 
