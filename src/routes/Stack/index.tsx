@@ -3,7 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 // Screens
 import Home from '../../screens/Home';
-import Profile from '../../screens/Home';
+import Profile from '../../screens/Profile';
 
 // Functional Component
 export const Stack = () => {
@@ -12,9 +12,11 @@ export const Stack = () => {
 
   // Rendering
   return (
-    <Navigator screenOptions={{headerShown: false}} initialRouteName="Home">
-      <Screen name="Home" component={Home} />
-      <Screen name="Profile" component={Profile} />
+    <Navigator
+      screenOptions={{headerShown: false, animation: 'slide_from_right'}}
+      initialRouteName="home">
+      <Screen name="home" component={Home} />
+      <Screen name="profile" component={Profile} />
     </Navigator>
   );
 };

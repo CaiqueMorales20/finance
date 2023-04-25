@@ -7,6 +7,7 @@ export const ProfileS = styled.View`
   align-items: center;
   justify-content: center;
   flex: 1;
+  gap: 10px;
 `;
 
 export const ProfileText = styled.Text`
