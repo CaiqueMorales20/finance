@@ -11,5 +11,5 @@ export const HomeS = styled.View`
 `;
 
 export const HomeText = styled.Text`
-  color: #efefef;
+  color: #212121;
 `;

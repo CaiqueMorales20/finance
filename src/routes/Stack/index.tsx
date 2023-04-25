@@ -13,7 +13,7 @@ export const Stack = () => {
   // Rendering
   return (
     <Navigator
-      screenOptions={{headerShown: false, animation: 'slide_from_right'}}
+      screenOptions={{headerShown: false, animation: 'fade'}}
       initialRouteName="home">
       <Screen name="home" component={Home} />
       <Screen name="profile" component={Profile} />

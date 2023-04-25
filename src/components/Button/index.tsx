@@ -8,8 +8,8 @@ import {ButtonProps} from './types';
 export const Button = (button: ButtonProps) => {
   // Rendering
   return (
-    <ButtonS onPress={button.onPress}>
-      <ButtonText>{button.title}</ButtonText>
+    <ButtonS outline={button.outline} onPress={button.onPress}>
+      <ButtonText outline={button.outline}>{button.title}</ButtonText>
     </ButtonS>
   );
 };

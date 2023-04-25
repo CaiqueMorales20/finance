@@ -2,10 +2,11 @@
 import {useNavigation} from '@react-navigation/native';
 
 // Imported Components
+import {PageContainer} from '../../components/PageContainer';
 import {Button} from '../../components/Button';
 
 // Styled Components
-import {HomeS, HomeText} from './style';
+import {HomeText} from './style';
 
 // Functional Component
 const Home = () => {
@@ -14,10 +15,10 @@ const Home = () => {
 
   // Rendering
   return (
-    <HomeS>
+    <PageContainer>
       <HomeText>Home</HomeText>
       <Button title="profile" onPress={() => navigation.navigate('profile')} />
-    </HomeS>
+    </PageContainer>
   );
 };
 

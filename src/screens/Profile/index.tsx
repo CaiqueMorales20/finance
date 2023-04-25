@@ -16,8 +16,11 @@ const Profile = () => {
   return (
     <ProfileS>
       <ProfileText>Profile</ProfileText>
-      <Button title="Voltar" onPress={() => navigation.goBack()} />
-      <Button title="home" onPress={() => navigation.navigate('home')} />
+      <Button
+        outline
+        title="go home"
+        onPress={() => navigation.navigate('home')}
+      />
     </ProfileS>
   );
 };
