@@ -1,14 +1,10 @@
 // Imported Components
-import {Container, Text} from './App.styled';
+import {Route} from './src/routes';
 
 // Functional Component
 const App = () => {
   // Rendering
-  return (
-    <Container>
-      <Text>Controle de finanças</Text>
-    </Container>
-  );
+  return <Route />;
 };
 
 // Export
