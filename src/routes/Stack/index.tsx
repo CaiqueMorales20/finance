@@ -2,6 +2,7 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 // Screens
+import Login from '../../screens/Login';
 import Home from '../../screens/Home';
 import Profile from '../../screens/Profile';
 
@@ -14,7 +15,8 @@ export const Stack = () => {
   return (
     <Navigator
       screenOptions={{headerShown: false, animation: 'fade'}}
-      initialRouteName="home">
+      initialRouteName="login">
+      <Screen name="login" component={Login} />
       <Screen name="home" component={Home} />
       <Screen name="profile" component={Profile} />
     </Navigator>
