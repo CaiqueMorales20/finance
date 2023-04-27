@@ -13,8 +13,3 @@ export const TabS = styled.View`
   justify-content: center;
   gap: 20px;
 `;
-
-export const TabItem = styled.View`
-  background-color: red;
-  width: 80px;
-`;

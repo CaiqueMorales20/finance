@@ -1,5 +1,8 @@
+// Imports
+import {TabItem} from './components/TabItem';
+
 // Styled Components
-import {TabItem, TabS} from './style';
+import {TabS} from './style';
 
 // Functional Component
 export const Tab = () => {
