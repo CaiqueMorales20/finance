@@ -7,7 +7,13 @@ export const LoginS = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+`;
+
+export const LoginContent = styled.View`
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 10px;
 `;
 
 export const LoginText = styled.Text`

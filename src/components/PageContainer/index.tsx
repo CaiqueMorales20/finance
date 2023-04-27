@@ -1,3 +1,6 @@
+// Navigation
+import {Tab} from '../../routes/Tab';
+
 // Styled Components
 import {PageContainerS} from './style';
 
@@ -7,5 +10,10 @@ import {PageContainerProps} from './type';
 // Functional Component
 export const PageContainer = ({children}: PageContainerProps) => {
   // Rendering
-  return <PageContainerS>{children}</PageContainerS>;
+  return (
+    <PageContainerS>
+      {children}
+      <Tab />
+    </PageContainerS>
+  );
 };

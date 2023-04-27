@@ -2,10 +2,11 @@
 import {useNavigation} from '@react-navigation/native';
 
 // Imported Components
+import {Input} from '../../components/Input';
 import {Button} from '../../components/Button';
 
 // Styled Components
-import {LoginS, LoginText} from './style';
+import {LoginContent, LoginS} from './style';
 
 // Functional Component
 const Login = () => {
@@ -15,8 +16,11 @@ const Login = () => {
   // Rendering
   return (
     <LoginS>
-      <LoginText>Login</LoginText>
-      <Button title="Entrar" onPress={() => navigation.navigate('home')} />
+      <LoginContent>
+        <Input placeholder="Usuário" />
+        <Input placeholder="Senha" />
+        <Button title="Entrar" onPress={() => navigation.navigate('home')} />
+      </LoginContent>
     </LoginS>
   );
 };
