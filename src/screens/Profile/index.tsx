@@ -1,27 +1,25 @@
-// Imports
-import {useNavigation} from '@react-navigation/native';
-
 // Imported Components
-import {Button} from '../../components/Button';
+import {PageContainer} from '../../components/PageContainer';
+import {ProfileItem} from './ProfileItem';
 
 // Styled Components
-import {ProfileS, ProfileText} from './style';
+import {ProfileContainer} from './style';
 
 // Functional Component
 const Profile = () => {
-  // Variables
-  const navigation = useNavigation<any>();
-
   // Rendering
   return (
-    <ProfileS>
-      <ProfileText>Profile</ProfileText>
-      <Button
-        outline
-        title="go home"
-        onPress={() => navigation.navigate('home')}
-      />
-    </ProfileS>
+    <PageContainer>
+      <ProfileContainer>
+        <ProfileItem
+          title="Nome"
+          description="Nicolli Frizzatti Morales Martin"
+        />
+        <ProfileItem title="Idade" description="19" />
+        <ProfileItem title="Profissão" description="Gostosa" />
+        <ProfileItem title="Estado civil" description="União estável" />
+      </ProfileContainer>
+    </PageContainer>
   );
 };
 

@@ -1,22 +1,20 @@
-// Imports
-import {useNavigation} from '@react-navigation/native';
-
 // Imported Components
 import {Pressable} from 'react-native';
 
 // Styled Components
-import {TabItemS, TabItemText} from './style';
+import {TabIcon, TabItemS, TabItemText} from './style';
+
+// Types
+import {TabItemProps} from './types';
 
 // Functional Components
-export const TabItem = () => {
-  // Variables
-  const navigation = useNavigation<any>();
-
+export const TabItem = (props: TabItemProps) => {
   // Rendering
   return (
-    <Pressable onPress={() => navigation.navigate('profile')}>
+    <Pressable onPress={props.onPress}>
       <TabItemS>
-        <TabItemText>Profile</TabItemText>
+        {/* <TabIcon source={require('../../../../assets/icons/user.png')} /> */}
+        <TabItemText>{props.name}</TabItemText>
       </TabItemS>
     </Pressable>
   );

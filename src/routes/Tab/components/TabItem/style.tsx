@@ -3,11 +3,17 @@ import styled from 'styled-components/native';
 
 // Styled COmponents
 export const TabItemS = styled.View`
-  background-color: red;
-  height: 40px;
+  align-items: center;
+  justify-content: center;
   width: 80px;
+  gap: 10px;
+`;
+
+export const TabIcon = styled.Image`
+  width: 25px;
+  height: 30px;
 `;
 
 export const TabItemText = styled.Text`
-  color: #ffffff;
+  color: #efefef;
 `;

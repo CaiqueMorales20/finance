@@ -3,13 +3,14 @@ import styled from 'styled-components/native';
 
 // Styled Components
 export const TabS = styled.View`
-  flex-direction: row;
   position: absolute;
   bottom: 0;
-  right: 0;
-  height: 40px;
+  height: 70px;
   width: 100%;
-  background-color: #404040;
+  background-color: #576490;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-bottom: -3px;
 `;

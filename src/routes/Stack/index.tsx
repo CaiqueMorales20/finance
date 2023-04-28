@@ -14,7 +14,7 @@ export const Stack = () => {
   // Rendering
   return (
     <Navigator
-      screenOptions={{headerShown: false, animation: 'fade'}}
+      screenOptions={{headerShown: false, animation: 'slide_from_right'}}
       initialRouteName="login">
       <Screen name="login" component={Login} />
       <Screen name="home" component={Home} />

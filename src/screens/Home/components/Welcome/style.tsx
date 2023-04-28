@@ -2,12 +2,7 @@
 import styled from 'styled-components/native';
 
 // Styled Components
-export const HomeS = styled.View`
-  height: 100%;
-  gap: 10px;
-`;
-
-export const Welcome = styled.View`
+export const WelcomeS = styled.View`
   background-color: #efefef;
   padding: 20px;
   width: 100%;
@@ -16,7 +11,7 @@ export const Welcome = styled.View`
   gap: 10px;
 `;
 
-export const HomeText = styled.Text`
+export const WelcomeText = styled.Text`
   color: #576490;
   font-size: 14px;
   font-weight: 700;

@@ -1,8 +1,9 @@
-// Navigation
+// Imported Components
+import {Header} from '../Header';
 import {Tab} from '../../routes/Tab';
 
 // Styled Components
-import {PageContainerS} from './style';
+import {PageContainerS, PageContent} from './style';
 
 // Types
 import {PageContainerProps} from './type';
@@ -12,7 +13,8 @@ export const PageContainer = ({children}: PageContainerProps) => {
   // Rendering
   return (
     <PageContainerS>
-      {children}
+      <Header />
+      <PageContent>{children}</PageContent>
       <Tab />
     </PageContainerS>
   );
