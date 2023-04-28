@@ -1,5 +1,5 @@
 // Styled Components
-import {HeaderS, HeaderText, SettingIcon, UserImg} from './style';
+import {HeaderS, SettingIcon, UserImg} from './style';
 
 // Functional Component
 export const Header = () => {

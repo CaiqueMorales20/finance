@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from '../../screens/Login';
 import Home from '../../screens/Home';
 import Profile from '../../screens/Profile';
+import Settings from '../../screens/Settings';
 
 // Functional Component
 export const Stack = () => {
@@ -17,6 +18,7 @@ export const Stack = () => {
       screenOptions={{headerShown: false, animation: 'slide_from_right'}}
       initialRouteName="login">
       <Screen name="login" component={Login} />
+      <Screen name="settings" component={Settings} />
       <Screen name="home" component={Home} />
       <Screen name="profile" component={Profile} />
     </Navigator>

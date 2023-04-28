@@ -1,6 +1,6 @@
 // Imported Components
 import {PageContainer} from '../../components/PageContainer';
-import {ProfileItem} from './ProfileItem';
+import {ProfileItem} from './components/ProfileItem';
 
 // Styled Components
 import {ProfileContainer} from './style';
