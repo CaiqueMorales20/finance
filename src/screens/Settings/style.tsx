@@ -3,10 +3,12 @@ import styled from 'styled-components/native';
 
 // Styled Components
 export const SettingsS = styled.View`
-  /* position: absolute;
-  top: 0; */
-  background-color: red;
+  background-color: #576390;
   flex: 1;
-  height: 100%;
-  width: 100%;
+`;
+
+export const SettingsContent = styled.View`
+  margin-top: 50px;
+  border-top-width: 1px;
+  border-color: #efefef;
 `;

@@ -15,10 +15,18 @@ export const Stack = () => {
   // Rendering
   return (
     <Navigator
-      screenOptions={{headerShown: false, animation: 'slide_from_right'}}
+      screenOptions={{
+        headerShown: false,
+        animation: 'fade',
+        animationDuration: 10000,
+      }}
       initialRouteName="login">
       <Screen name="login" component={Login} />
-      <Screen name="settings" component={Settings} />
+      <Screen
+        name="settings"
+        component={Settings}
+        options={{animation: 'slide_from_right'}}
+      />
       <Screen name="home" component={Home} />
       <Screen name="profile" component={Profile} />
     </Navigator>

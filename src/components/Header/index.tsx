@@ -1,5 +1,8 @@
+// Imported Components
+import {SettingIcon} from './components/SettingIcon';
+
 // Styled Components
-import {HeaderS, SettingIcon, UserImg} from './style';
+import {HeaderS, UserImg} from './style';
 
 // Functional Component
 export const Header = () => {
@@ -7,7 +10,7 @@ export const Header = () => {
   return (
     <HeaderS>
       <UserImg source={require('../../assets/img/nicolli.png')} />
-      <SettingIcon source={require('../../assets/icons/setting.png')} />
+      <SettingIcon />
     </HeaderS>
   );
 };

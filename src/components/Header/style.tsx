@@ -3,8 +3,6 @@ import styled from 'styled-components/native';
 
 // Styled Components
 export const HeaderS = styled.View`
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 70px;
   background-color: #576490;
@@ -21,9 +19,4 @@ export const UserImg = styled.Image`
 
 export const HeaderText = styled.Text`
   color: #efefef;
-`;
-
-export const SettingIcon = styled.Image`
-  width: 25px;
-  height: 25px;
 `;

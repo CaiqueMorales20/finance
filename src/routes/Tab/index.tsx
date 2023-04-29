@@ -15,9 +15,18 @@ export const Tab = () => {
   // Rendering
   return (
     <TabS>
-      <TabItem name="Home" onPress={() => navigation.navigate('home')} />
-      <TabItem name="Perfil" onPress={() => navigation.navigate('profile')} />
-      <TabItem name="Sair" onPress={() => navigation.navigate('login')} />
+      <TabItem
+        icon={require('../../assets/icons/home.png')}
+        onPress={() => navigation.navigate('home')}
+      />
+      <TabItem
+        icon={require('../../assets/icons/profile.png')}
+        onPress={() => navigation.navigate('profile')}
+      />
+      <TabItem
+        icon={require('../../assets/icons/logout.png')}
+        onPress={() => navigation.navigate('login')}
+      />
     </TabS>
   );
 };

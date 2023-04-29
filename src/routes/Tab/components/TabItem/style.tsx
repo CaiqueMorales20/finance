@@ -11,7 +11,7 @@ export const TabItemS = styled.View`
 
 export const TabIcon = styled.Image`
   width: 25px;
-  height: 30px;
+  height: 25px;
 `;
 
 export const TabItemText = styled.Text`
