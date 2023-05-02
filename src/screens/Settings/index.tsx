@@ -1,6 +1,8 @@
 // Imported Components
 import {SettingsHeader} from './components/SettingsHeader';
 import {SettingsItem} from './components/SettingsItem';
+
+// Data
 import {SettingsData} from './data';
 
 // Styled Components

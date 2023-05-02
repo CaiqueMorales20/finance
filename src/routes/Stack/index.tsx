@@ -6,6 +6,7 @@ import Login from '../../screens/Login';
 import Home from '../../screens/Home';
 import Profile from '../../screens/Profile';
 import Settings from '../../screens/Settings';
+import Graphics from '../../screens/Graphics';
 
 // Functional Component
 export const Stack = () => {
@@ -17,11 +18,14 @@ export const Stack = () => {
     <Navigator
       screenOptions={{
         headerShown: false,
-        animation: 'fade',
-        animationDuration: 10000,
+        animation: 'none',
       }}
       initialRouteName="login">
-      <Screen name="login" component={Login} />
+      <Screen
+        name="login"
+        component={Login}
+        options={{animation: 'slide_from_left'}}
+      />
       <Screen
         name="settings"
         component={Settings}
@@ -29,6 +33,7 @@ export const Stack = () => {
       />
       <Screen name="home" component={Home} />
       <Screen name="profile" component={Profile} />
+      <Screen name="graphics" component={Graphics} />
     </Navigator>
   );
 };
