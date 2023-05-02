@@ -16,6 +16,14 @@ export const LoginContent = styled.View`
   gap: 10px;
 `;
 
+export const LoginTitle = styled.Text`
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fefefe;
+  margin-bottom: 10px;
+`;
+
 export const LoginText = styled.Text`
   color: #efefef;
   font-weight: 700;

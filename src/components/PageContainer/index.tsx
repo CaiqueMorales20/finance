@@ -3,7 +3,7 @@ import {Header} from '../Header';
 import {Tab} from '../../routes/Tab';
 
 // Styled Components
-import {PageContainerS, PageContent} from './style';
+import {PageContainerS, PageContent, MarginBlock} from './style';
 
 // Types
 import {PageContainerProps} from './type';
@@ -14,7 +14,9 @@ export const PageContainer = ({children}: PageContainerProps) => {
   return (
     <PageContainerS>
       <Header />
-      <PageContent>{children}</PageContent>
+      <PageContent showsVerticalScrollIndicator={false}>
+        <MarginBlock>{children}</MarginBlock>
+      </PageContent>
       <Tab />
     </PageContainerS>
   );

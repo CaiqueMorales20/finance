@@ -3,8 +3,6 @@ import styled from 'styled-components/native';
 
 // Styled Components
 export const TabS = styled.View`
-  position: absolute;
-  bottom: 0;
   height: 70px;
   width: 100%;
   background-color: #576490;

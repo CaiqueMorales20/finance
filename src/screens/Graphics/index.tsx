@@ -1,13 +1,12 @@
 // Imported Components
 import {PageContainer} from '../../components/PageContainer';
 import {Pie} from './components/Pie';
-import {Caption} from './components/Caption';
 
 // Styled Components
-import {CaptionContainer, GraphicsS, GraphicsText} from './style';
+import {GraphicsS, GraphicsText, Mn} from './style';
 
 // Data
-import {GraphicsData} from './data';
+import {GraphicsData, GraphicsData2} from './data';
 
 // Functional Component
 const Graphics = () => {
@@ -16,13 +15,9 @@ const Graphics = () => {
     <PageContainer>
       <GraphicsS>
         <GraphicsText>Gráfico de gastos</GraphicsText>
-        <Pie />
-        <CaptionContainer>
-          {GraphicsData.map((item, index) => {
-            // Rendering
-            return <Caption text={item.x} color={item.color} />;
-          })}
-        </CaptionContainer>
+        <Pie data={GraphicsData2} />
+        <Mn />
+        <Pie data={GraphicsData} />
       </GraphicsS>
     </PageContainer>
   );

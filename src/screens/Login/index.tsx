@@ -6,7 +6,7 @@ import {Input} from '../../components/Input';
 import {Button} from '../../components/Button';
 
 // Styled Components
-import {LoginContent, LoginS} from './style';
+import {LoginContent, LoginS, LoginTitle} from './style';
 
 // Functional Component
 const Login = () => {
@@ -17,6 +17,7 @@ const Login = () => {
   return (
     <LoginS>
       <LoginContent>
+        <LoginTitle>Finanças</LoginTitle>
         <Input placeholder="Usuário" />
         <Input placeholder="Senha" />
         <Button title="Entrar" onPress={() => navigation.navigate('home')} />

@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 // Styled Components
 export const GraphicsS = styled.View`
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 `;
 
 export const GraphicsText = styled.Text`
@@ -14,7 +14,6 @@ export const GraphicsText = styled.Text`
   text-transform: uppercase;
 `;
 
-export const CaptionContainer = styled.View`
-  gap: 10px;
-  align-self: flex-start;
+export const Mn = styled.View`
+  margin-bottom: 0px;
 `;
