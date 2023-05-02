@@ -1,9 +1,13 @@
 // Imported Components
 import {PageContainer} from '../../components/PageContainer';
-import {VictoryPie} from 'victory-native';
+import {Pie} from './components/Pie';
+import {Caption} from './components/Caption';
 
 // Styled Components
-import {GraphicsS, GraphicsText} from './style';
+import {CaptionContainer, GraphicsS, GraphicsText} from './style';
+
+// Data
+import {GraphicsData} from './data';
 
 // Functional Component
 const Graphics = () => {
@@ -12,18 +16,13 @@ const Graphics = () => {
     <PageContainer>
       <GraphicsS>
         <GraphicsText>Gráfico de gastos</GraphicsText>
-        <VictoryPie
-          width={300}
-          height={300}
-          padding={0}
-          colorScale={['blue', 'yellow', 'red']}
-          data={[
-            {x: 'Cats', y: 35},
-            {x: 'Dogs', y: 40},
-            {x: 'Birds', y: 55},
-          ]}
-          labelComponent={<></>}
-        />
+        <Pie />
+        <CaptionContainer>
+          {GraphicsData.map((item, index) => {
+            // Rendering
+            return <Caption text={item.x} color={item.color} />;
+          })}
+        </CaptionContainer>
       </GraphicsS>
     </PageContainer>
   );

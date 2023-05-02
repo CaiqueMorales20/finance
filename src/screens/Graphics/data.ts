@@ -1,6 +1,6 @@
+// Data
 export const GraphicsData = [
-  {name: "Parcelas", price: 300, color: "purple"},
-  {name: "Parcelas", price: 123, color: "red"},
-  {name: "Parcelas", price: 321, color: "purple"},
-  {name: "Parcelas", price: 1412, color: "purple"},
+  {x: "Parcelas", y: 300, color: "red"},
+  {x: "Ganhos", y: 321, color: "yellow"},
+  {x: "Sexo", y: 1412, color: "orange"},
 ]
