@@ -8,6 +8,13 @@ import {InputProps} from './types';
 export const Input = (input: InputProps) => {
   // Rendering
   return (
-    <InputS placeholder={input.placeholder} placeholderTextColor="#313131" />
+    <InputS
+      placeholder={input.placeholder}
+      value={input.value}
+      onChange={input.onChange}
+      secureTextEntry={input.hide}
+      placeholderTextColor="#313131"
+      underlineColorAndroid="transparent"
+    />
   );
 };
